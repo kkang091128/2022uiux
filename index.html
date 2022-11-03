@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2022 UI/UX WebDesign Publisher</title>
+    <style>
+        *{margin:0; padding:0}
+        li{list-style: none;}
+        a{
+            display:block; text-decoration: none;
+            color:inherit;
+        }
+        body{
+            background:#202229;
+            height:100vh;
+        }
+        #wrap{
+            width:80%; margin:0 auto;
+            background:#fff;
+            padding: 2%;
+            position: absolute;
+            top:50%; left:50%;
+            transform: translate(-50%, -50%);
+            border: 5px #ccc solid;
+            border-radius: 10px 0 10px 0;
+            box-shadow: #eee 0px 0px 10px;
+        }
+        .portfolio{
+            display:flex;
+            justify-content: space-around;
+            line-height: 40px;
+        }
+        #wrap > h3, #wrap > h4{
+            text-align: center;
+            color:#0d1958;
+        }
+        #wrap > h3{
+            line-height: 4rem;
+            font-size: 2rem;
+        }
+        #wrap > h4{
+            line-height: 1.5rem;
+            font-size: 1.2rem;
+            padding-bottom: 3%;
+        }
+        #wrap > h3 > span:nth-child(1){
+            color:#2a880a
+        }
+        #wrap > h3 > span:nth-child(2){
+            color:#0d1958
+        }
+        #wrap > h3 > span:nth-child(3){
+            color:#2b83c6
+        }
+        .table li{
+            transition: .6s;
+        }
+        .table > li:nth-child(even){
+            background:#eee;
+        }
+        .table > li:nth-child(odd){
+            background:#ddd;            
+        }
+        .table > li:hover {
+            padding-left: 1%;
+            background: #fff;
+            outline: 2px dodgerblue solid;
+        }
+        .portfolio a{
+            position: relative;
+        }
+        .portfolio a::before{
+            content:"▶";
+            opacity: 0;
+            display:block;
+            position: absolute;
+            top:0; left:-20px;
+            color:#777;
+            transition: .6s; 
+        }
+        .portfolio a:hover::before{
+            opacity: 1;
+            content:"▶";           
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h3>2022 <span>UI/UX </span><span>WebDesign </span><span>Publisher</span></h3>
+        <h4>collection of works</h4>
+        <ul class="table">
+            <li>
+                <ul class="portfolio">
+                    <li>김보경</li>
+                    <li><a href="https://kbk1313.github.io/test1/" target="_blink">화면구현</a></li>
+                    <li><a target="_blink" href="https://www.figma.com/file/9VYWfzg5BA8UnoDVrwxnJC/Untitled?node-id=0%3A1">UI디자인</a></li>
+                    <li><a target="_blink" href="https://kbk1313.github.io/test2/">UI구현</a></li>
+                    <li><a target="_blink" href="#">스마트앱구현</a></li>
+                    <li><a target="_blink" href="https://kbk1313.github.io/portfolio/">Portfolio</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="portfolio">
+                    <li>김창한</li>
+                    <li><a target="_blink" href="https://johndoehat.github.io/test1">화면구현</a></li>
+                    <li><a target="_blink" href="https://www.figma.com/file/TlK5i4w3LJSRHztj0Ue9Cz/Untitled?node-id=0%3A1">UI디자인</a></li>
+                    <li><a target="_blink" href="https://johndoehat.github.io/cube">UI구현</a></li>
+                    <li><a target="_blink" href="https://johndoehat.github.io/weather">스마트앱구현</a></li>
+                    <li><a target="_blink" href="https://johndoehat.github.io/portfolio">Portfolio</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="portfolio">
+                    <li>김태영</li>
+                    <li><a target="_blink" href="https://kkang091128.github.io/test1/">화면구현</a></li>
+                    <li><a target="_blink" href="https://www.figma.com/file/zJJo4rxhWAOjxCKLLSpaWX/Untitled?node-id=0%3A1">UI디자인</a></li>
+                    <li><a target="_blink" href="#">UI구현</a></li>
+                    <li><a target="_blink" href="#">스마트앱구현</a></li>
+                    <li><a target="_blink" href="https://kimtaeyoungs.github.io/">Portfolio</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="portfolio">
+                    <li>박세희</li>
+                    <li><a target="_blink" href="https://sh8656.github.io/test1/">화면구현</a></li>
+                    <li><a target="_blink" href="https://www.figma.com/file/vsKyASXg4vL98NcI2Ma2db/UI-%EC%83%81%EC%84%B8%EB%94%94%EC%9E%90%EC%9D%B8">UI디자인</a></li>
+                    <li><a target="_blink" href="https://sh8656.github.io/UI/">UI구현</a></li>
+                    <li><a target="_blink" href="https://sh8656.github.io/WEATHERAPP/">스마트앱구현</a></li>
+                    <li><a target="_blink" href="https://sh8656.github.io/webPub/">Portfolio</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="portfolio">
+                    <li>오효주</li>
+                    <li><a target="_blink" href="https://hyojuoh.github.io/01/">화면구현</a></li>
+                    <li><a target="_blink" href="https://www.figma.com/file/Iwzmjc2EuYwYl7zZvH9nfq/GUI-%EC%83%81%EC%84%B8-%EB%94%94%EC%9E%90%EC%9D%B8%ED%95%98%EA%B8%B0?node-id=0%3A1">UI디자인</a></li>
+                    <li><a target="_blink" href="https://hyojuoh.github.io/betterthanlife/">UI구현</a></li>
+                    <li><a target="_blink" href="https://hyojuoh.github.io/meApp/">스마트앱구현</a></li>
+                    <li><a target="_blink" href="https://hyojuoh.github.io/22portfolio/">Portfolio</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="portfolio">
+                    <li>이경미</li>
+                    <li><a target="_blink" href="https://miumiu95.github.io/test1/">화면구현</a></li>
+                    <li><a target="_blink" href="https://www.figma.com/proto/Cxr6vYxUdWIusLABhZf7nb/Untitled?node-id=5%3A150&scaling=scale-down&page-id=0%3A1&starting-point-node-id=5%3A150">UI디자인</a></li>
+                    <li><a target="_blink" href="https://miumiu95.github.io/test2/">UI구현</a></li>
+                    <li><a target="_blink" href="https://miumiu95.github.io/MyApp/">스마트앱구현</a></li>
+                    <li><a target="_blink" href="https://miumiu95.github.io/portfolio/">Portfolio</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="portfolio">
+                    <li>정선호</li>
+                    <li><a target="_blink" href="https://toamto558.github.io/uiscreen/">화면구현</a></li>
+                    <li><a target="_blink" href="https://www.figma.com/file/FT1M623FmQItUUMwwUCwIE/GUI-%EC%83%81%EC%84%B8-%EB%94%94%EC%9E%90%EC%9D%B8%ED%95%98%EA%B8%B0?node-id=0%3A1">UI디자인</a></li>
+                    <li><a target="_blink" href="https://toamto558.github.io/test/">UI구현</a></li>
+                    <li><a target="_blink" href="https://toamto558.github.io/Myapp/">스마트앱구현</a></li>
+                    <li><a target="_blink" href="https://toamto558.github.io/webpub/portfolio/">Portfolio</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="portfolio">
+                    <li>조순이</li>
+                    <li><a target="_blink" href="#">화면구현</a></li>
+                    <li><a target="_blink" href="https://www.figma.com/file/aPfQkhauBoPuB7cDLFDlRd/Untitled?node-id=0%3A1">UI디자인</a></li>
+                    <li><a target="_blink" href="#">UI구현</a></li>
+                    <li><a target="_blink" href="#">스마트앱구현</a></li>
+                    <li><a target="_blink" href="#">Portfolio</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="portfolio">
+                    <li>조영이</li>
+                    <li><a target="_blink" href="https://joyeoungi.github.io/ghkausrngus/">화면구현</a></li>
+                    <li><a target="_blink" href="https://www.figma.com/file/NvS5dAmcM9GpCcBCzWjjzS/%EB%B0%98%EC%9D%91%ED%98%95%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8?node-id=0%3A1">UI디자인</a></li>
+                    <li><a target="_blink" href="https://joyeoungi.github.io/test2/">UI구현</a></li>
+                    <li><a target="_blink" href="#">스마트앱구현</a></li>
+                    <li><a target="_blink" href="https://joyeoungi.github.io/portfolio/">Portfolio</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="portfolio">
+                    <li>조효선</li>
+                    <li><a target="_blink" href="https://mari3233.github.io/test1/">화면구현</a></li>
+                    <li><a target="_blink" href="https://www.figma.com/proto/h8Xn3sirZ39yP3wH9boW89/GUI-%EC%83%81%EC%84%B8-%EB%94%94%EC%9E%90%EC%9D%B8%ED%95%98%EA%B8%B0?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2">UI디자인</a></li>
+                    <li><a target="_blink" href="https://mari3233.github.io/test2/">UI구현</a></li>
+                    <li><a target="_blink" href="https://mari3233.github.io/MyApp/">스마트앱구현</a></li>
+                    <li><a target="_blink" href="https://mari3233.github.io/webPub/">Portfolio</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
